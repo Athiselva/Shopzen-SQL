@@ -1,3 +1,5 @@
+<img src="https://github.com/Athiselva/Shopzen-SQL/blob/main/Microservice.jpg" alt="Microservice" width="550" height="300">
+
 # Shopzen SQL Repository
 
 This repository contains SQL scripts to create a database schema for Shopzen, an e-commerce platform. The database is organized into three schemas for user management, product management, and order management.
