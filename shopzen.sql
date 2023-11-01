@@ -1,3 +1,14 @@
+/*
+This SQL script creates a database schema for Shopzen, an e-commerce platform. It creates three schemas for user management, product management, and order management. 
+
+The user management schema contains a table for user information, including their name, email, phone number, address, username, password, and whether they are an admin. 
+
+The product management schema contains a table for product information, including the product name, type, specification ID, price, and creation and modification timestamps. It also creates a table for product specifications, including the product ID, size, weight, model, description, and creation and modification timestamps. 
+
+The order management schema contains a table for order information, including the user ID, product ID, count, price, and creation and modification timestamps. It also creates a table for payment information, including the transaction ID, price, status, UPN ID, and creation and modification timestamps.
+
+This script drops any existing schemas with the same names before creating new ones.
+*/
 DROP SCHEMA shopzen_user_management;
 
 CREATE SCHEMA shopzen_user_management;
@@ -79,4 +90,3 @@ CREATE TABLE shopzen_order_management.payment (
     modified_by INT,
     is_deleted TINYINT(1) DEFAULT 0
 );
-
